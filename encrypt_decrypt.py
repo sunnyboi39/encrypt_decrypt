@@ -10,7 +10,7 @@ def scramble2encrypt(phrase):
     for i in range(0, phrase_val):
         phrase_list.append(phrase_new[i])
 
-    print(phrase_list)
+    #print(phrase_list)
     unico_list = []
     str_new_list = []
     for char in range(0, phrase_val, 2):
