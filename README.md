@@ -4,6 +4,8 @@ Copy to IDE of your choice
 *******************************************************************************
 
 
+
+
 message = input("enter your message: ")
 def scramble2encrypt(phrase):
     phrase_val = len(phrase)
