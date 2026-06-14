@@ -2,10 +2,9 @@
 simple encryption program in python from csc121
 Copy to IDE of your choice
 *******************************************************************************
-# string methods
+
+
 message = input("enter your message: ")
-
-
 def scramble2encrypt(phrase):
     phrase_val = len(phrase)
     phrase_new = phrase.replace(' ', '_')
