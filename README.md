@@ -1,7 +1,5 @@
 # string methods
 message = input("enter your message: ")
-
-
 def scramble2encrypt(phrase):
     phrase_val = len(phrase)
     phrase_new = phrase.replace(' ', '_')
@@ -9,7 +7,6 @@ def scramble2encrypt(phrase):
     phrase_list = []
     for i in range(0, phrase_val):
         phrase_list.append(phrase_new[i])
-
     #print(phrase_list)
     unico_list = []
     str_new_list = []
@@ -21,7 +18,6 @@ def scramble2encrypt(phrase):
         unicod = ord(phrase_list[chart])
         unico_list.insert(chart, unicod + 5)
         # print("unicode list odd: ", unico_list)
-
     for st in range(0, phrase_val):
         str_new = chr(unico_list[st])
         str_new_list.append(str_new)
@@ -29,8 +25,6 @@ def scramble2encrypt(phrase):
     mess_encrypt = ''.join(str_new_list)
     print("encrypted message: ", mess_encrypt)
     return mess_encrypt
-
-
 def scramble2decrypt():
     phrase = scramble2encrypt(message)
     phrase_val = len(phrase)
@@ -47,13 +41,10 @@ def scramble2decrypt():
         unicod = ord(phrase_list[chart])
         unico_list.insert(chart, unicod - 5)
         # print("unicode list odd: ", unico_list)
-
     for st in range(0, phrase_val):
         str_new = chr(unico_list[st])
         str_new_list.append(str_new)
         # print("decrypted message list: ", str_new_list)
     mess_decrypt = ''.join(str_new_list)
     print("decrypted message: ", mess_decrypt)
-
-
 scramble2decrypt()
